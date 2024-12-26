@@ -48,14 +48,4 @@
   <!-- Add more tools here in the same format -->
 </div>
 
-<style>
-  p, h1, h3 {
-    font-family: 'Arial', sans-serif;
-  }
-  img {
-    transition: transform 0.3s ease-in-out;
-  }
-  img:hover {
-    transform: scale(1.1);
-  }
-</style>
+
