@@ -1,18 +1,15 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
+# GitHub Action for generating a contribution graph with a snake animation.
 
 name: Generate Snake
 
-# Controls when the action will run. This action runs every 6 hours.
-
+# Controls when the action will run. This action runs every 6 hours and can be triggered manually.
 on:
   schedule:
-      # every 6 hours
+    # Runs every 6 hours
     - cron: "0 */6 * * *"
-
-# This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
 
-# The sequence of runs in this workflow:
+# The sequence of jobs in this workflow
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -21,32 +18,33 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-      - uses: actions/checkout@v3
-
-    # Generates the snake  
-      - uses: Platane/snk@v3
+      # Step 2: Generate the snake animation
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
         id: snake-gif
         with:
-          github_user_name: ${{ github.lalitk533784 }}
-          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
+          github_user_name: "lalitk533784" # Replace with your GitHub username
           outputs: |
             dist/github-contribution-grid-snake.gif
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     # show the status of the build. Makes it easier for debugging (if there's any issues).
+
+      # Step 3: Show the status of the repository for debugging
       - name: Show build status
         run: git status
 
-      - name: Push new files to output branch 
+      # Step 4: Push new files to the output branch
+      - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          # the output branch we mentioned above
-          target_branch: output
+          target_branch: output # The branch where output files are stored
           build_dir: dist
-          commit_message: Update snake animations
+          commit_message: "Update snake animations"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
