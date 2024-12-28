@@ -22,6 +22,9 @@
   <a href="https://www.linkedin.com/in/lalit-kumar-koli-59b292257/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
   </a>
+  <a href="https://www.credly.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Credly-F47321?style=for-the-badge&logo=credly&logoColor=white" alt="Credly Badge" />
+</a>
   
 </div>
 
