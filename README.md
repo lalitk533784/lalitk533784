@@ -10,7 +10,7 @@
 
 <div align="center">
  
- 🔭 I’m currently  **Fressar**
+ 🔭 I’m currently  **IT Trainer**
  
  
  </div>
