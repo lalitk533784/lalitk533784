@@ -10,7 +10,7 @@
 
 <div align="center">
  
- 🔭 I’m currently  **Senoir H.R. Executive**
+ 🔭 I’m currently  **Senior H.R. Executive**
  
  
  </div>
