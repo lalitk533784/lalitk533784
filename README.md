@@ -4,13 +4,13 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Lalit+Kumar+Koli;" />
 </h1>
 
-<h3 align="center">Student of ADIT</h3>
+<h3 align="center">Senior H.R. Executive</h3>
 
 <br/>
 
 <div align="center">
  
- 🔭 I’m currently  **IT Trainer**
+ 🔭 I’m currently  **Senoir H.R. Executive**
  
  
  </div>
